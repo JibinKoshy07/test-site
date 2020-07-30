@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>St Marys Orthodox Church Vasco-Goa</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lexend+Zetta&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!--css  folder -->
+  <link href="css/ffolders.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+<style>
+  body {
+  background-color: #eee;
+  
+}
+
+
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+/*  */
+* {
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="index.html" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="vicars.html">Former Vicars</a></li>
+          <li><a href="prayergroups.html">Prayer Groups</a></li>
+          <li><a href="office.html">Office Banner</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="locate.html">Locate Us</a></li>
+         
+
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+ 
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+        <section id="portfolio" class="clearfix">
+            <div class="container">
+      
+              <header class="section-header">
+                <h3 class="section-title"
+                style="font-family: 'Courgette', cursive;"
+                >Gallery</h3>
+              </header>
+      
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-cath">Catholicate Day</li>
+                    <li data-filter=".filter-youth">Youth Activities</li>
+                    <li data-filter=".filter-sundays">Sunday School</li>
+                    <li data-filter=".filter-charity">Banglore Charity</li>
+                    <li data-filter=".filter-youth">Golden Gubilee</li>
+                    
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="row portfolio-container">
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-youth">
+                  <div class="portfolio-wrap">
+                    <img src="gallery/gallery-img/youth-a.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">OCYM</a></h4>
+                      <p>Youth Activities</p>
+                      <div>
+                        <a href="gallery/gallery-img/youth-a.jpg" data-lightbox="portfolio" data-title="OCYM Members" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-sundays" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Ms. Jinu Ponnachan</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Ms. Jinu Ponnachan represented st marys orthodox Syrian church vasco da gama at zonal level sunday school art competition and achieved success in elocution, bible quiz and bible verse writing. and she also stood 1st in brahmavar diocese for achieving highest marks in 10th standard sunday school examination. Rev fr sam t samuel presented her with the certificate (13 October 2019)</p>
+                        <div>
+                          <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Jinu Ponnachan" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-youth">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/youth-a2.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a href="#">OCYM</a></h4>
+                        <p>Youth Activities</p>
+                        <div>
+                          <a href="gallery/gallery-img/youth-a2.jpg" data-lightbox="portfolio" data-title="OCYM Members" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-youth">
+                    <div class="portfolio-wrap">
+                      <img src="img/portfolio/youth1.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a>OCYM</a></h4>
+                        <p>Youth Members</p>
+                        <div>
+                          <a href="img/portfolio/youth1.jpg" data-lightbox="portfolio" data-title="OCYM Members" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+      
+                <div class="col-lg-4 col-md-6 portfolio-item filter-cath">
+                  <div class="portfolio-wrap">
+                    <img src="gallery/gallery-img/cath1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">CATHOLICATE DAY</a></h4>
+                      <p>Managing Committee Members</p>
+                      <div>
+                        <a href="gallery/gallery-img/cath1.jpg" class="link-preview" data-lightbox="portfolio" data-title="managing committee" title="Preview"><i class="ion ion-eye"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-cath">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/cath2.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a href="#">CATHOLICATE DAY</a></h4>
+                        <p>Managing Committee Members</p>
+                        <div>
+                          <a href="gallery/gallery-img/cath2.jpg" class="link-preview" data-lightbox="portfolio" data-title="managing committee" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-cath">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/cath3.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a href="#">CATHOLICATE DAY</a></h4>
+                        <p>Managing Committee Members</p>
+                        <div>
+                          <a href="gallery/gallery-img/cath3.jpg" class="link-preview" data-lightbox="portfolio" data-title="managing committee" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-cath">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/cath4.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a href="#">CATHOLICATE DAY</a></h4>
+                        <p>Managing Committee Members</p>
+                        <div>
+                          <a href="gallery/gallery-img/cath4.jpg" class="link-preview" data-lightbox="portfolio" data-title="managing committee" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <img src="gallery/gallery-img/bcharity1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a >Charity mission</a></h4>
+                      <p style="font-family: 'Josefin Sans', sans-serif;">Charity mission: Dayabhavan and snehasadan, Bangalore</p>
+                      <div>
+                        <a href="gallery/gallery-img/bcharity1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/bcharity2.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Charity mission</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Charity mission: Dayabhavan and snehasadan, Bangalore</p>
+                        <div>
+                          <a href="gallery/gallery-img/bcharity2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/bcharity3.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Charity mission</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Charity mission: Dayabhavan and snehasadan, Bangalore</p>
+                        <div>
+                          <a href="gallery/gallery-img/bcharity3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/bcharity4.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Charity mission</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Charity mission: Dayabhavan and snehasadan, Bangalore</p>
+                        <div>
+                          <a href="gallery/gallery-img/bcharity4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/bcharity5.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Charity mission</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Charity mission: Dayabhavan and snehasadan, Bangalore</p>
+                        <div>
+                          <a href="gallery/gallery-img/bcharity5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/bcharity6.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Charity mission</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Charity mission: Dayabhavan and snehasadan, Bangalore</p>
+                        <div>
+                          <a href="gallery/gallery-img/bcharity6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-sundays" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Sunday School</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Sunday School Group</p>
+                        <div>
+                          <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-charity" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                      <img src="gallery/gallery-img/bcharity7.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4><a >Sunday School</a></h4>
+                        <p style="font-family: 'Josefin Sans', sans-serif;">Sunday School Group</p>
+                        <div>
+                          <a href="gallery/gallery-img/bcharity7.jpg" class="link-preview" data-lightbox="portfolio" data-title="Sunday School Students" title="Preview"><i class="ion ion-eye"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+      
+              </div>
+      
+            </div>
+          </section>
+    </section>
+
+    
+    
+    <!-- #team -->
+
+   
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>St. Marys Orthodox Church</h3>
+            <p>The St. Marys Orthodox Church is situated in the heart of the city of Vasco, one of the Principal cities of the state of Goa.
+              Our Church is located just a stones throw away from the Goa Airport .</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="locate.html">Locate</a></li>
+              <li><a href="office.html">Office</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              St. Marys Orthodox Church<br>
+
+              Mangor, Vasco<br>
+
+              Goa- 403 802.<br>
+
+              Tel No.: (0832) 2531133<br>
+
+              Email Us: stmarysoscgoa@gmail.com
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Office detials...</h4>
+            <p>.........................</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright St Marys Orthodox Church. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+        -->
+        <h1></h1>
+        <h1></h1>
+      <strong>  Designed and Developed by 
+        <a href="https://jibinkoshy07.github.io/Jibu.Psy/">Jibin Koshy</a> </strong>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script>
+    var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {        
+        item.classList.toggle('full');        
+    });
+});
+
+  </script>
+  
+
+
+</body>
+</html>
