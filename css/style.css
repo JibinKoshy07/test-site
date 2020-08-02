@@ -263,10 +263,10 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/intro-bg.jpg") center bottom no-repeat;
+  background: url("../img/header.jpg") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
-  padding-top: 22%;
+  padding-top: 35%;
 }
 
 #intro .intro-img {
